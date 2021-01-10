@@ -4,9 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Image Editor</title>
+    <link rel="icon" type="image/png" href="images/icon.jpg">
+    <script type="text/javascript" src="Js/SimpleImage.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header>
+        <h1 id="first">Edit Your Image</h1>
+    </header>
+        
+    <main>
+    <div class="left">
+        <label>
+            <canvas id="c1" onmouseover="focuscanvas(this,'c1')" onmouseout="unfocuscanvas(this,'c1')">
+            </canvas>
+            <input type="file" accept="image/*" id="input1" onchange="upload()">
+        </label>
+
+        <ul>
+            <li>Filter</li>
+            <ul>
+                <li><input type="button" class="b1" id="but1" value="GreyScale" style=background-color:grey onclick="convert('but1','Grey')"></li>
+
+                <li><input type="button" class="b1" id="but2" value="RedScale" style=background-color:red onclick="convert('but2','Red')"></li>
+
+                <li><input type="button" class="b1" id="but3" value="GreenScale" style=background-color:green onclick="convert('but3','Green')"></li>
+
+                <li><input type="button" class="b1" id="but4" value="BlueScale" style=background-color:blue onclick="convert('but4','Blue')"></li>
+
+                <li><input type="color" class="b1" id="but5" value="#3FE01F" onchange="convert('but5', '')"></li>
+
+                <li><input type="button" class="b1" id="but6" value="Rainbow" onclick="convert('but6','Rainbow')"></li>
+            </ul>
+
+            <li>Effects</li>
+            <ul>
+                <li><input type="button" class="b1" id="but7" value="Blurred" onclick="convert('but7','Blur')"></li>
+
+                <li><input type="button" class="b1" id="but8" value="Mirror Image" onclick="convert('but8','Mirror')"></li>
+
+                <li><input type="button" class="b1" id="but9" value="Water Image" onclick="convert('but9','Water')"></li>
+            </ul>
+        </ul>
+    </div>
+    
+    <div class="middle">
+        <label for="input1">
+            <canvas id="c2" onmouseover="focuscanvas(this,'c2')" onmouseout="unfocuscanvas(this,'c2')">
+            </canvas>
+        </label>
+
+<!--
+    <a id="download_btn" onclick="download_img(this);">
+        Download
+    </a>
+-->
+        
+    </div>
+        
+        <div class="right">
+            <ul>
+                <li>Resize</li>
+
+                <li>Crop</li>
+                
+                <li>Rotate</li>
+                <ul>
+                    <li>right</li>
+                    <li>left</li>
+                </ul>
+            </ul>
+        </div>
+    </main>
 </body>
+
+<script type="text/javascript" src="Js/index.js"></script>
 
 </html>
