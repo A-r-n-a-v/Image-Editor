@@ -27,3 +27,28 @@ function focuscanvas(e, c) {
         ctx.fillText("+", e.width / 2, e.height / 2);
     }
 }
+
+function unfocuscanvas(e, c) {
+    if (load == false) {
+        e.style.backgroundColor = "#f5f5ff";
+        clear_canvas(e);
+    }
+}
+
+function clear_canvas(canvas) {
+    canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function upload() {
+    clear_canvas(can1);
+    new_img = null;
+    clear_canvas(can2);
+    finput = document.getElementById("input1");
+    var temp = finput.value.replace(/\134/g, '/');
+    var arr1 = temp.split("/");
+    img_name = arr1[arr1.length - 1].split(".")[0];
+    original_img = new SimpleImage(finput);
+    original_img.drawTo(can1);
+    original_img.drawTo(can2);
+    load = true;
+}
