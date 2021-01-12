@@ -68,9 +68,6 @@ function convert(btn, v) {
     for (var p of original_img.values()) {
         new_img.setPixel(p.getX(), p.getY(), p);
     }
-    if (new_img.values().length > 1000000) {
-        new_img.setSize(1024, 768);
-    }
 
     if (btn == "but5") {
         var colorinput = document.getElementById("but5");
@@ -92,9 +89,7 @@ function convert(btn, v) {
         for (var pi of new_img.values()) {
             var avg = (pi.getRed() + pi.getGreen() + pi.getBlue()) / 3;
             switch (btn) {
-                case "but1":
-                    doGrey(pi, avg);
-                    break;
+                
                 case "but2":
                     doRed(pi, avg);
                     break;
@@ -117,4 +112,28 @@ function convert(btn, v) {
     }
     document.getElementById("p2").style.visibility = "hidden";
     new_img.drawTo(can2);
+}
+
+function doGrey(pix, avg) {
+    pix.setRed(avg);
+    pix.setGreen(avg);
+    pix.setBlue(avg);
+}
+
+function doRed(pix, avg) {
+    pix.setRed(avg);
+    pix.setGreen(0);
+    pix.setBlue(0);
+}
+
+function doGreen(pix, avg) {
+    pix.setRed(0);
+    pix.setGreen(avg);
+    pix.setBlue(0);
+}
+
+function doBlue(pix, avg) {
+    pix.setRed(0);
+    pix.setGreen(0);
+    pix.setBlue(avg);
 }
