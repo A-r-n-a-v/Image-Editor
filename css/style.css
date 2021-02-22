@@ -1,3 +1,36 @@
+body {
+    background-color: #302f2c;
+    background-image: url("../images/bubble.jpg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    color: #00d3a2;
+    font-family: "URW Chancery L", cursive;
+    font-variant: small-caps;
+    text-shadow: 5px 5px yellow;
+}
+
+
+.middle {
+    clear: both;
+    margin: 0 1%;
+    width: 68%;
+    background-color: #757060;
+    display: inline-block;
+    height: 100vh;
+}
+
+.right {
+    float: right;
+    width: 15%;
+    background-color: #757060;
+    display: inline-block;
+    height: 100vh;
+    overflow: auto;
+}
 
 #c1 {
     margin: 5% auto;
@@ -39,12 +72,7 @@ div > ul > ul {
 }
 */
 
-#download_btn {
-    background-color: lightblue;
-    margin-left: 30%;
-    padding: 1%;
-    font-size: 2vw;
-}
+
 
 #download_btn:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -56,18 +84,12 @@ div > ul > ul {
     width: 100%;
 }
 
-.buttons:after {
-    clear: both;
-    display: block;
-    content: "";
-}
+
 
 .b1 {
     font-style: italic;
     font-size: 2vw;
-    color: white;
-    border: 0px solid;
-    padding: 0.7%;
+   
     margin: 2%;
 }
 
@@ -96,9 +118,5 @@ div > ul > ul {
     background-size: cover;
 }
 
-#but8 {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQiTYE6DAfZQ_zA_EmG61JBiYEAT_d02-xARw&usqp=CAU");
-    background-size: cover;
-}
 
 #but9 {}
