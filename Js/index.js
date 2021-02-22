@@ -168,7 +168,7 @@ function doRainBow(pix, avg, h) {
         pix.setRed(color(139, avg));
         pix.setGreen(color(0, avg));
         pix.setBlue(color(255, avg));
-    
+    }
 }
 
 //function used for doRainBow()
