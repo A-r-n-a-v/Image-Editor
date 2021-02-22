@@ -137,3 +137,36 @@ function doBlue(pix, avg) {
     pix.setGreen(0);
     pix.setBlue(avg);
 }
+
+function doRainBow(pix, avg, h) {
+    var y = pix.getY();
+    if (y < h / 7) {
+        pix.setRed(color(255, avg));
+        pix.setGreen(color(0, avg));
+        pix.setBlue(color(0, avg));
+    } else if (y < (2 * h) / 7) {
+        pix.setRed(color(255, avg));
+        pix.setGreen(color(127, avg));
+        pix.setBlue(color(0, avg));
+    } else if (y < (3 * h) / 7) {
+        pix.setRed(color(255, avg));
+        pix.setGreen(color(255, avg));
+        pix.setBlue(color(0, avg));
+    } else if (y < (4 * h) / 7) {
+        pix.setRed(color(0, avg));
+        pix.setGreen(color(255, avg));
+        pix.setBlue(color(0, avg));
+    } else if (y < (5 * h) / 7) {
+        pix.setRed(color(0, avg));
+        pix.setGreen(color(0, avg));
+        pix.setBlue(color(255, avg));
+    } else if (y < (6 * h) / 7) {
+        pix.setRed(color(46, avg));
+        pix.setGreen(color(43, avg));
+        pix.setBlue(color(95, avg));
+    } else {
+        pix.setRed(color(139, avg));
+        pix.setGreen(color(0, avg));
+        pix.setBlue(color(255, avg));
+    }
+}
