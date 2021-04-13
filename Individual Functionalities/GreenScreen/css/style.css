@@ -1,0 +1,63 @@
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+
+canvas{
+  width: 476px;
+  height: 400px;
+  border: 1px solid lightgrey;
+  margin: 10px;
+  background-color: #f5f5ff;
+}
+
+.names{
+  position: relative;
+  font-size: 40px;
+  top: -300px;
+  left: 145px;
+  color: blue;
+  font-style: italic;
+}
+
+#p2{
+  top: -432px;
+  left: 660px;
+}
+
+#p3{
+  top: -565px;
+  left: 1200px;  
+}
+
+.choose{
+  position: relative;
+  top: -430px;
+}
+
+#fgchoose{
+  margin-left: 170px;
+}
+
+#bgchoose{
+  margin-left: 250px;
+}
+
+.b1{
+  font-style: italic; 
+  font-size: 25px;
+  position: relative;
+  color: lightyellow;
+  border: 5px solid;
+  border-color: lightblue;
+  padding: 15px;
+  margin: 13px;
+  top: -470px;
+  margin-left: 1190px;
+  background-color:green
+}
+
+
+
+
+

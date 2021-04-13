@@ -1,0 +1,28 @@
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<h1>Combining two Images using GreenScreen</h1>
+
+<canvas id="c1">
+</canvas>
+
+<canvas id="c2">
+</canvas>
+
+<canvas id="c3">
+</canvas>
+
+<div>
+  <p class="names" id="p1">Foreground<br>Image</p>
+  <p class="names" id="p2">Background<br>Image</p>
+  <p class="names" id="p3">Output<br>Image</p>
+</div>
+
+<div class="choose">
+  <input type="file" multiple="false" accept="image/*" id="fgchoose" onchange="fgupload()">
+  <input type="file" multiple="false" accept="image/*" id="bgchoose" onchange="bgupload()">
+</div>
+
+<div>
+  <input type="button" class="b1" id="but1" value="Combine" onclick="combine('GreyScale','but1')">
+</div>
