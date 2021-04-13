@@ -1,0 +1,31 @@
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<h1>Converting an Image to GreyScale</h1>
+
+<i><p>We can not add more pixels to an image, we can only make the GreyScaling faster by reducing the number of pixels in the image. Different standard sizes can be selected for GreyScaing. <b>Remember</b>, if the original size of image is less than selected GreyScaling size, image will be GreyScaled according to the original size. If nothing matches one's needs, custom sizes can also be provided by the user.</p></i>
+
+<canvas id="c1">
+</canvas>
+
+<div class="d1">
+  Filename:
+  <input type="file" multiple="false" accept="image/*" id="file1" onchange="upload()">
+</div>
+
+<div>
+  <input type="button" class="b1" id="but1" value="Original size GreyScale" onclick="make_grey('Original size GreyScale',0,0,'but1')">
+  <br>
+  <input type="button" class="b1" id="but2" value="GreyScale (680*480)" onclick="make_grey('GreyScale (680*480)',680,480,'but2')">
+  <br>
+  <input type="button" class="b1" id="but3" value="GreyScale (800*600)" onclick="make_grey('GreyScale (800*600)',800,600,'but3')">
+  <br>
+  <input type="button" class="b1" id="but4" value="GreyScale (1028*768)" onclick="make_grey('GreyScale (1028*768)',1028,768,'but4')">
+  <br>
+  <input type="button" class="b1" id="but5" value="Custom GreyScale" onclick="make_grey('',0,0,'but5')"> 
+  <br>
+  <input type="tel" class="t1 hide" id="tel1" size="6" placeholder="width">
+  <input type="tel" class="t1 hide" id="tel2" size="6" placeholder="height">
+  <input type="button" class="b1 hide" id="but6" value="Convert" onclick="make_grey('Convert',0,0,'but6')">
+</div>
+

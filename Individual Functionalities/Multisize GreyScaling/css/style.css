@@ -1,0 +1,68 @@
+h1{
+  text-align: center;
+}
+
+p{
+  color: red;
+}
+
+canvas{
+  width: 500px;
+  height: 400px;
+  border: 1px solid lightgrey;
+  margin: 10px;
+}
+
+.d1{
+  margin-left: 130px;
+}
+
+.b1{
+  font-style: italic; 
+  font-size: 20px;
+  position: relative;
+  background-color: grey;
+  color: lightyellow;
+  border: 3px solid;
+  border-color: lightblue;
+  padding: 15px;
+  margin: 13px;
+  top: -450px;
+  margin-left: 600px;
+}
+
+.t1{
+  font-style: italic; 
+  font-size: 20px;
+  position: relative;
+  background-color: white;
+  color: blue;
+  border: 1.5pt solid;
+  border-color: lightblue;
+  padding: 5px;
+}
+
+#tel1{
+  left: 815px;
+  top: -515px;
+}
+
+#tel2{
+  left: 920px;
+  top: -552.45px;
+}
+
+#but6{
+  top: -561px;
+  padding: 3px;
+  background-color: black;
+  left: 293px;
+  font-size: 15px;
+}
+
+.hide{
+  display: none;
+}
+
+
+
